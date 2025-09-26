@@ -1,0 +1,23 @@
+Start
+	Display "Enter the your budget: "
+	Input budget
+	
+	While spent is not equal to 0 
+		Display "Enter an expense (0 to quit): "
+		Input spent
+		Add spent to total
+	End While
+
+	Set difference = budget - total
+
+	Display "Budget: ", budget
+	Display "Spent: ", total
+
+	If difference is greater than 0 then
+		Display "You are under budget by", difference
+	Else if difference is less than 0 then 
+		Display "You are over budget by ", difference
+	Else
+		Display "You are on budget."
+	
+	End
